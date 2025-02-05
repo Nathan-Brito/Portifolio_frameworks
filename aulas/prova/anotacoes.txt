@@ -1,0 +1,60 @@
+Foi realizada a prova da UC:
+
+Prova 12: Controle de Faturas
+Duração: 30 minutos
+Regras: Prova sem consulta à internet. O uso de anotações realizadas no caderno
+durante as aulas é permitido. O caderno deve ser apresentado para o professor 24
+horas antes do início da prova para análise.
+Avaliação: O código será avaliado quanto à funcionalidade, organização, boas práticas
+e uso correto dos conceitos estudados.
+Enunciado
+Você foi contratado para criar um protótipo funcional de uma aplicação web para o
+gerenciamento de faturas. A aplicação deve permitir que o usuário visualize, adicione e
+exclua faturas. Utilize o framework Flask para implementar a solução.
+Cenário
+O sistema deve conter uma interface inicial que exiba uma lista de faturas. Cada fatura
+contém os seguintes campos: ID, Cliente, Valor e Status (Paga ou Pendente). As
+faturas devem ser exibidas ordenadas por Status. O sistema também deve permitir
+adicionar novas faturas e excluir faturas existentes. As alterações na lista de faturas
+devem ser refletidas na interface principal.
+Tarefas
+1. Crie uma estrutura de projeto Flask que inclua:
+- Um arquivo principal (app.py) para a lógica da aplicação Flask.
+- Uma pasta com o nome “templates” contendo os arquivos HTML.
+- Uma pasta com o nome “static” (opcional) para incluir estilos CSS. CSS é opcional
+devido ao limite de tempo para realizar a prova.
+2. Implemente as seguintes rotas:
+- / (rota principal): Renderiza uma página HTML contendo a lista de registros. Cada
+registro deve conter um botão de “Excluir” associado a ele.
+- /adicionar (método POST): Permite adicionar um novo registro à lista, recebendo os
+dados via formulário HTML.
+- /excluir/<int:id>: Exclui um registro da lista com base no ID informado na URL.
+Dados da aplicação
+Exemplo inicial:
+
+```
+
+{"id": 1, "detalhes": "João Silva", "valor": "150.75", "data_status": "Paga"}
+{"id": 2, "detalhes": "Maria Oliveira", "valor": "300.0", "data_status": "Pendente"}
+```
+Templates HTML
+- index.html: Página principal que exibe a lista de registros em formato de tabela, com
+botões para excluir cada registro.
+- adicionar.html: Página com um formulário HTML para adicionar um novo registro.
+Regras de implementação
+- O ID dos registros deve ser gerado automaticamente (não repetido).
+- Use o render_template para carregar os arquivos HTML.
+- As alterações (adição ou exclusão) devem ser refletidas na página principal sem a
+necessidade de reiniciar a aplicação.
+Extras opcionais (se houver tempo)
+- Adicione um botão para editar os dados de um registro.
+- Utilize CSS para estilizar a tabela e o formulário.
+- Adicione mensagens de feedback ao usuário após cada ação (ex.: 'Registro
+adicionado com sucesso!').
+Entrega
+O projeto deve ser funcional e executável no servidor local Flask. O professor avaliará:
+- Funcionamento correto das rotas e interação com os dados.
+- Organização do código e uso adequado dos conceitos.
+- Implementação das funcionalidades obrigatórias e, se possível, das opcionais.
+
+Boa prova!

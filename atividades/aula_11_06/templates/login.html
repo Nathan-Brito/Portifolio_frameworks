@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('atividades.atividade2.static', filename='js/script01.js') }}"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='./'" class="voltar">Voltar</button>
+        <h1>Login</h1>
+        <div class="activity-list">
+            <input type="text" id="username" placeholder="Usuário">
+            <input type="password" id="password" placeholder="Senha">
+            <button onclick="submitLogin()">Entrar</button>
+            <p id="message"></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+html {
+  background: #F0FFFF;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px solid #00acc1;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.canvas {
+  border: 1px solid #00acc1;
+}
+
+video {
+  width: 400px;
+  height: 300px;
+  border: 2px solid #000;
+}
+
+img {
+  width: 400px;
+  height: 300px;
+}
+
+.table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.row.header {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.cell {
+  flex: 1;
+  padding: 0.5rem;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+.activity-list {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+}
+.activity-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.activity-list li {
+  background: #e0f7fa;
+  border: 1px solid #00acc1;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.activity-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  background: #b2ebf2;
+}
+.activity-list li a {
+  text-decoration: none;
+  color: #00796b;
+  font-weight: bold;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.profile-header h1 {
+  font-size: 2rem;
+  color: #00796b;
+  margin: 0;
+}
+.profile-header .subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.profile-section {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.profile-section h2 {
+  font-size: 1.5rem;
+  color: #00acc1;
+  border-bottom: 2px solid #00acc1;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.profile-section ul {
+  padding-left: 1rem;
+}
+.profile-section ul li {
+  margin: 0.5rem 0;
+}
+.profile-section ul li:before {
+  content: "• ";
+  color: #00acc1;
+}
+.profile-section .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.profile-section .skills-list li {
+  background: #e0f7fa;
+  border: 1px solid #00acc1;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+.profile-section p {
+  color: #666;
+}
+
+.profile-section ul li {
+  font-size: 1rem;
+}
+
+.container p {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */

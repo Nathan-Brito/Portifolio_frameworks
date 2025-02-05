@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('atividades.atividade1.static', filename='js/script03.js') }}"></script>
+    <title>Tabela Flexível</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='./'" class="voltar">Voltar</button>
+        <div class="table">
+            <div class="row header">
+                <div class="cell">ID</div>
+                <div class="cell">Nome</div>
+                <div class="cell">Sobrenome</div>
+                <div class="cell">Email</div>
+                <div class="cell">Ações</div>
+            </div>
+            <div id="table-body"></div>
+        </div>
+
+    </div>
+</body>
+</html>

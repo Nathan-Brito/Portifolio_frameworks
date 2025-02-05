@@ -1,0 +1,47 @@
+nome = -------
+render_template ('index.hmtl', nome = nome, ... , ...)
+
+
+
+no index.hmtl
+<b>Olá {{nome}}</b>
+
+o que for dentro do par de chaves ele renderiza como python
+
+Atividade n1:
+    considerando um usuario com um usuario e uma senha mocado (dado de teste statico) façam uma página de 
+autenticação
+    login
+    senha
+    que retorne uma string de bem vindo usuario ou Login invalido (usuario ou senha)
+
+    Js campos com id user e key
+
+Atividade n2:
+    limite o limite de tentativa do usuario em duas vezes
+    mostrando uma mensagem
+
+    vai ter uma div com uma class resposta
+
+Atividade n3:
+    estilizar as paginas de forma bonita
+    estiliza tudo que ta dentro do container
+
+
+Atividade n4:
+    escreva um script python que gere automaticamente um template html contendo um formulario para input 
+de dados
+    com os campos que devem ter vão ser recebidos por um JSON
+    construir o formulario html
+
+Atividade n5:
+    incremente o script python para que apos gerar o template ele construa automaticamente uma rota que 
+permita visualizar o mesmo
+
+Atividade n6:
+    crie uma classe python que encapsula dados do usuario (5 a 6 campos), e desenvolva uma função de autenticação
+    validar dados, validar se estão vazios, tudo
+    criar uma sessão (???)
+     
+
+

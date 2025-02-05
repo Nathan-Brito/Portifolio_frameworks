@@ -1,0 +1,57 @@
+Toda programação em web trabalham com Requisição e Resposta
+
+o backend trabalha com uma programação Reativa, logo, não inicia
+com processos em andamento, assim funciona a ligação Cliente Servidor
+
+o flask permite que nosso código python fique esperando as suas chamadas
+
+Pesquisar: existe um tipo de variavel especial (a mais comum) em que o nome da variavel e seu valor é a mesma
+__name__, __root__, etc...
+
+aqui rodaremos local "web" fazendo de nossas maquinas um "servidor"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+Pedaço que faz com que o código rode sem parar e espera ordens, 
+se mantendo como um servidor
+
+debug=True
+
+Faz com que você possa editar o código e ele atualiza o servidor
+ port=3030
+um parametro para mudar a porta
+
+host = '0.0.0.0'
+faz com que todos na mesma rede possa acessar seu código 
+
+Anotações começam com @
+@app.route -> comando para indetificar a rota desejada 
+sendo ('/') a raiz do projeto 
+
+Tarefa
+criar uma segunda rota de contato e colocar dados de contatos
+
+Fazer daqui 4 semanas um prototipo do trabalho
+
+Atividades:
+    - Atividade 01
+    Crie uma página web (rota) com a tag canvas que permita ao usuario
+    deslocar uma fotografia para esquerda e para a direita com as setas do teclado
+    
+
+    - Atividade 02
+    crie uma rota que permita o usuario capturar uma fotografia da webcam
+    e exibir
+
+    - Atividade 03
+    crie uma rota com uma página web que exiba uma tabela sem usar tabela
+    com 997 linhas e 5 colunas
+        id, nome, sobrenome, email, ações 
+    
+    - Atividade 04
+    crie uma rota com 3 links, um para cada atividade versão bonitas
+
+    - Atividade 05
+    crie 6 rotas sendo cada uma estilizada, sendo cada rota deve conter o curriculo de um integrante do grupo
+    

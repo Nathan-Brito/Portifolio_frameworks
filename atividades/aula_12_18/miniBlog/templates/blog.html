@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Blog</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='/atividades/aula_12_18/'" class="voltar">Voltar</button>
+        <h1>Mini-Blog</h1>
+        
+        <div class="activity-list">
+            <form action="/atividades/aula_12_18/atividadeBlog/add" method="post">
+                <textarea name="content" rows="4" cols="50" placeholder="Escreva seu post..." required></textarea>
+                <button type="submit">Postar</button>
+            </form>
+        </div>
+
+        <h2>Posts</h2>
+        <div class="posts"> 
+            {% for post in posts %}
+                <div class="teste">
+                    <p>{{ post.content }}</p>
+                    <small>{{ post.datetime.strftime('%d/%m/%Y %H:%M') }}</small>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

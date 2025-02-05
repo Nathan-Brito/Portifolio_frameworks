@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Exibição de Anotações</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='/aulas'" class="voltar">Voltar</button>
+        <h1>Conteúdo do Arquivo de Anotações</h1>
+        <pre>{{ annotations }}</pre>
+        <br>
+        {% if activity_link %}
+            <button onclick="window.location.href='{{ activity_link }}'" class="atividade-link">
+                Acessar Atividade Relacionada
+            </button>
+        {% endif %}
+
+        
+    </div>
+</body>
+</html>

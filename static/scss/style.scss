@@ -1,0 +1,224 @@
+// Variáveis
+$primary-color: #00acc1;
+$secondary-color: #e0f7fa;
+$hover-color: #b2ebf2;
+$text-color: #00796b;
+$background-color: #F0FFFF;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$border-radius: 5px;
+$padding: 1rem;
+$margin: 1rem;
+
+html {
+    background: $background-color;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: $margin;
+    padding: 2rem;
+    border: 2px solid $primary-color;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $margin;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+    p, pre {
+        white-space: pre-line; /* Garante que quebras de linha sejam respeitadas e longas palavras quebrem */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%; /* Garante que o conteúdo não ultrapasse o container */
+        font-size: 1rem;
+    }
+}
+
+.canvas, video, img {
+    border: 1px solid $primary-color;
+}
+
+video, img {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #000;
+}
+
+.table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+
+    &.header {
+        font-weight: bold;
+        background-color: #f2f2f2;
+    }
+}
+
+.cell {
+    flex: 1;
+    padding: 0.5rem;
+    text-align: center;
+    border-right: 1px solid #ddd;
+
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.activity-list {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    flex-direction: column;
+    gap: 1rem;
+
+    input, button {
+        width: 100%;  // Ajusta para que os inputs e o botão ocupem a largura completa do container
+        padding: 0.8rem; // Aumenta o padding para uma área de clique confortável
+        margin-bottom: 0.5rem; // Espaço adicional entre os elementos
+        border: 1px solid $primary-color; // Estilo da borda com a cor primária
+        border-radius: $border-radius;
+    }
+    
+    // Especificamente para o botão de submit, adicionando um hover consistente
+    button {
+        background-color: $primary-color;
+        color: white;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: $margin;
+    }
+
+    li {
+        background: $secondary-color;
+        border: 1px solid $primary-color;
+        border-radius: $border-radius;
+        box-shadow: 0 4px 6px $shadow-color;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            background: $hover-color;
+        }
+
+        a {
+            text-decoration: none;
+            color: $text-color;
+            font-weight: bold;
+            padding: $padding;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    h1 {
+        font-size: 2rem;
+        color: $text-color;
+        margin: 0;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        color: #555;
+    }
+}
+
+.profile-section {
+    width: 100%;
+    margin-bottom: 0.5rem;
+
+    h2 {
+        font-size: 1.5rem;
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        padding-left: 1rem;
+
+        li {
+            margin: 0.5rem 0;
+            &:before {
+                content: "• ";
+                color: $primary-color;
+            }
+        }
+    }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        li {
+            background: $secondary-color;
+            border: 1px solid $primary-color;
+            border-radius: $border-radius;
+            padding: 0.3rem 0.6rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+button {
+    background: $secondary-color;
+    border: 1px solid $primary-color;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 6px $shadow-color;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: $text-color;
+    font-weight: bold;
+    padding: 0.7rem;
+    display: block;
+    text-align: center;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        background: $hover-color;
+    }
+}
+
+.voltar {
+    align-self: flex-start;
+}

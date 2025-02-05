@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('atividades.atividade1.static', filename='js/script02.js') }}"></script>
+    <title>Captura de Imagem da Webcam</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='./'" class="voltar">Voltar</button>
+        <h2>Captura de Imagem da Webcam</h2>
+        <video id="video" autoplay></video>
+        <button id="capture">Capturar Imagem</button>
+        <canvas id="canvas" style="display: none;"></canvas>
+        <h3>Imagem Capturada:</h3>
+        <img id="photo" alt="Imagem da webcam" />
+    </div>
+</body>
+</html>

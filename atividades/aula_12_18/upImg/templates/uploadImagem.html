@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Upload de Imagem</title>
+</head>
+<body>
+   <div class="container">
+    <button onclick="window.location.href='.././'" class="voltar">Voltar</button>
+    <h1>Upload de Imagem</h1>
+    <div class="activity-list">
+        <form action="{{ url_for('.uploadImagem') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="arquivo" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    {% if mensagem %}
+        <p>{{ mensagem }}</p>
+        {% if path_arquivo  %}
+            <p>Arquivo salvo em: <strong>{{ path_arquivo  }}</strong></p>
+        {% endif %}
+    {% endif %}
+   </div>
+</body>
+</html>

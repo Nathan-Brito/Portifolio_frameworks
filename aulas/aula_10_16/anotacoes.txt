@@ -1,0 +1,40 @@
+1° aula
+Python como linguagem
+Flask como framework
+ORM – Mapeamento de Objeto Relacional - SQLAlquemy
+Banco de Dados – 
+Avaliação:
+•  1° nota – programação ao vivo – 11 e 18 de dezembro
+	Professor precisa entregar o tema até 48h antes
+	Individual
+
+•  2° nota – Portfolio – 12/02
+	Descrição de todas as aulas
+	Todos os projetos funcionais
+
+•  3° nota – Aplicação Prática – 22/01
+   Precisa ter:
+	Pelo menos uma api desenvolvida pelo aluno
+	Pelo menos um endpoint
+	Documentar
+	Código limpo
+	Validações necessárias
+	Um bônus se for uma aplicação Elastica/escalável
+	Web
+	Integração com banco de dados
+	Será testada por uma aplicação front usando somente a documentação
+	Individual
+
+Coisas que já sabem ou descubra:
+	Criar um ambiente virtual do python COM VENV
+	Esteja familiarizado com linux
+	Python venv – instalar no vscode
+	F1 -> Criar ambiente e segue passo a passo
+	Instalar pacotes no Python e no ambiente virtual
+	Como boas práticas NUNCA coloquem código na pasta do ambiente virtual
+	Requirements
+	Como gerar
+	Como instalar
+	Python pelo menos 3.11 na máquina
+
+Próxima aula trazer papel e caneta

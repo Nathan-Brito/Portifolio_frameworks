@@ -1,0 +1,59 @@
+Segunda aula Alex
+
+    -Nunca coloque código dentro da pasta de ambiente virtual!
+    -Forma 1 de criar:
+        Terminal:
+            -Criar pasta com nome do projeto 
+            -Dentro da pasta -> comando python -m venv .venv(ou nome desejado)
+            - .venv/Scripts/activate
+            - pip install {nome do pacote}
+            - python {nome do arquivo}.py 
+        
+        Instalar depois:
+            - Flask
+            - SQLAlquemy / Flask SQLAlquemy
+            - numpy - feito
+
+        Coisas úteis:
+            -site pypi -> buscar pacotes e seus comandos
+    
+    Dinamica de aulas:
+        Começa com lista de atividades que ficaram para casa
+        seguida de alguns dos conceitos necessarios para fazerem eles (alguns)
+
+    Organização de pastas:
+        projeto/
+            |-> .venv/
+            |-> app.py
+            |-> templates/ (para quando for usar front no mesmo projeto)
+                |-> aquivos.html com codigo python
+            |-> static/ (para quando for usar front no mesmo projeto)
+                |-> img/
+                |-> css/
+                |-> js/
+
+    Obeservações:
+        Frameworks precisam de padrões!
+        Todos arquivos .py precisam de código limpo (sem comentarios) e nomes significativos
+        nome das coias em ingles
+        variaveis snakecase  tipo_assim
+        barra de progresso em laços de repetição
+    
+    Comandos uteis:
+        pip freeze > requirements.txt   -> lista em um arquivo todas as suas dependências e versões
+
+        pip install -r requirements.txt  -> instala dependências e versa partir de um requirements
+
+        pip install pip-review
+        pip-review                 -> conjunto para conferir atualizações possíveis e instalar
+        pip-review --auto
+
+        python -m venv venv   -> cria ambiente virtual
+
+        venv\Scripts\activate - Windows          -> inicia ambiente virtual
+        source venv\bin\activate - mac e linux
+
+
+
+
+        

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Lista de Faturas</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='/atividades'" class="voltar">Voltar</button>
+        <h1>Lista de Faturas</h1>
+
+        <div class="activity-list">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Cliente</th>
+                    <th>Valor</th>
+                    <th>Status</th>
+                    <th>Ação</th>
+                </tr>
+    
+                <tbody>
+                    {% for fatura in faturas %}
+    
+                    <tr>
+                        <th>{{fatura.id}}</th>
+                        <th>{{fatura.detalhes}}</th>
+                        <th>{{fatura.valor}}</th>
+                        <th>{{fatura.data_status}}</th>
+                        <th>
+                            <button onclick="window.location.href='{{ url_for('atividades.prova.excluir', id=fatura.id) }}'" class="atividade-link">
+                                Excluir
+                            </button>
+                        </th>
+                    </tr>
+    
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <button onclick="window.location.href='{{ url_for('atividades.prova.adicionar') }}'" class="atividade-link">
+            Adicionar Fatura
+        </button>
+    </div>
+</body>
+</html>

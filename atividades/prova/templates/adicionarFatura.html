@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Adicionar Tarifas</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='./'" class="voltar">Voltar</button>
+        <h1>Adiconar Tarifas</h1>
+        <div class="activity-list">
+            <form method="POST">
+
+                <label for="detalhes">Cliente:</label>
+                <input type="text" id="detalhes" name="detalhes" required><br>
+        
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor"><br>
+        
+                <label for="data_status">Status:</label>
+                <select name="data_status" id="data_status">
+                    <option value="Paga">Paga</option>
+                    <option value="Pendente">Pendente</option>
+                </select><br>
+        
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('atividades.atividade1.static', filename='js/script01.js') }}"></script>
+    <title>Atividade 01</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='./'" class="voltar">Voltar</button>
+        <h2>Use as setas do teclado para mover a imagem</h2>
+        <canvas id="myCanvas" width="600" height="400" class="canvas"></canvas>
+    </div>
+
+</body>
+</html>

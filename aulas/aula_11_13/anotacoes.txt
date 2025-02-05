@@ -1,0 +1,32 @@
+
+Regra n° 1
+    - Não confie nos dados que chegam da requisição (cliente, user etc)
+    - Validar todos os dados baseado no que espera (numero ser numero, 
+    se texto se possui texto etc..)
+
+Regra n° 2
+    - Garantir integridade e consistencia dos dados. garantir que se você 
+    vai usar os dados mantelos guardados, persistencia dos dados.
+
+Regra n° 3
+    - Ou se trabalha de forma assincrona ou retornar respostas em forma habil
+    evitar grandes demoras
+
+Regra n° 4
+    - Tratar as exceções para não deixar o backend morrer
+
+
+como validar dados?
+Estrutura de seleção(IF-ELSE, SWITCH-CASE)
+
+Banco de dados - SQLAlquemy
+
+criar uma aplicação web com uma rota /autenticar
+um retorne com uma mensagem só para ver se esta funcionando
+
+tarefas:
+    - fazer todas as validações para que os dados foram preenchidos corretamente
+    - tratar execções para evitar que seja exibibir a mensagem padrão
+    - garantir que o usuario tenha a possibilidade de tentar logar de novo
+    - limitar em duas tentativas de erro
+    - alterar todos os retornos possiveis usando dados formatados JSON
