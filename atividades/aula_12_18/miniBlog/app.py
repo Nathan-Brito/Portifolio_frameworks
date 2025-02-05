@@ -23,6 +23,3 @@ def add_post():
     return redirect(url_for('atividades.atividade4.atividadeBlog.blog'))
 
 app.register_blueprint(atividadeBlog_blueprint, url_prefix='/atividadeBlog')
-
-if __name__ == '__main__':
-    app.run(debug=True)

@@ -35,6 +35,3 @@ def logout():
     return redirect(url_for('.login_preprova'))
 
 app.register_blueprint(auth_blueprint, url_prefix='/auth')
-
-if __name__ == '__main__':
-    app.run(debug=True)

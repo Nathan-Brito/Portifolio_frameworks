@@ -28,6 +28,3 @@ def uploadImagem():
     return render_template('uploadImagem.html', mensagem=mensagem, path_arquivo=path_arquivo)
 
 app.register_blueprint(atividadeUploadImg_blueprint, url_prefix='/atividadeUploadImg')
-
-if __name__ == '__main__':
-    app.run(debug=True)

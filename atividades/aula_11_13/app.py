@@ -32,6 +32,3 @@ def login():
 
 
 app.register_blueprint(atividade3_blueprint, url_prefix='/atividade3')
-
-if __name__ == '__main__':
-    app.run(debug=True)

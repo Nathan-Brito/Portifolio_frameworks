@@ -100,6 +100,3 @@ def formulario():
     return render_template('formulario.html') 
 
 app.register_blueprint(atividade2_blueprint, url_prefix='/atividade2')
-
-if __name__ == '__main__':
-    app.run(debug=True)
